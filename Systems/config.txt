@@ -1,0 +1,30 @@
+# Files
+
+# train_path = queries.json
+# test_path = Tests.json
+# results_path = results.csv
+
+# train_path = BibleTrain.json
+# test_path = Moe_Tests_v2.json
+# embed_path = Bible_embeddings
+# results_path = results.csv
+Urgency_train_path = urgentTrain.json
+MoE_train_path = Moe_train_v4.json
+
+
+Urgency_embed_path = my-urgency-detector
+MoE_embed_path = my-moe-detector
+
+
+Urgency_Threshold = 0.80
+Nonurgent_Threshold = 0.80
+MoE_Object_Threshold = 0.955
+MoE_Face_Threshold = 0.955
+MoE_OCR_Threshold = 0.955
+MoE_Other_Threshold = 0.955
+
+
+yolo_min_conf = 0.73
+
+EstimatedTTSSpeed = 15
+EstimatedMergeTime = 2

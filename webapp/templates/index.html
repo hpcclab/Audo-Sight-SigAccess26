@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudoSight Test Interface</title>
+    <style>
+        /* Base Settings */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: grid;
+            place-items: center;
+            min-height: 90vh;
+            background-color: #f4f7f6;
+            margin: 0;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            padding: 2.5rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #111;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #textInput {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            border: 2px solid #555;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+            color: #000;
+            background-color: #fff;
+        }
+
+        #textInput:focus,
+        .action-button:focus,
+        #textDisplay:focus {
+            outline: 3px solid #0056b3;
+            outline-offset: 2px;
+            border-color: #0056b3;
+        }
+
+        #textDisplay {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            border: 2px solid #555;
+            border-radius: 8px;
+            box-sizing: border-box;
+            text-align: left;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .controls-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .action-button {
+            padding: 0.85rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            flex-grow: 1;
+            min-width: 120px;
+        }
+
+        #submitButton {
+            color: #fff;
+            background-color: #0062cc;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        #submitButton:hover {
+            background-color: #004494;
+        }
+
+        .secondary-button {
+            color: #004494;
+            background-color: #e0f2ff;
+            border: 2px solid #0062cc;
+        }
+
+        .secondary-button:hover {
+            background-color: #cce7ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>Welcome to AudoSight Testing</h1>
+
+        <form id="chatForm" onsubmit="event.preventDefault();">
+            <label for="textInput" class="sr-only">Enter your message</label>
+
+            <input type="text" id="textInput" placeholder="Type your message here..." autocomplete="off"
+                aria-required="true">
+
+            <button type="submit" id="submitButton" class="action-button">
+                Send Message
+            </button>
+        </form>
+
+        <div class="controls-container">
+            <button id="replayButton" class="action-button secondary-button" aria-label="Replay audio response">
+                Play Response
+            </button>
+            <button id="nextButton" class="action-button secondary-button" aria-label="Go to next item">
+                Next
+            </button>
+        </div>
+
+        <div id="textDisplay" role="log" aria-live="polite" aria-label="AI Response" tabindex="0">
+            The AI's response will appear here...
+        </div>
+    </main>
+    <script>
+        // --- ELEMENTS ---
+        const textDisplay = document.getElementById('textDisplay');
+        const textInput = document.getElementById('textInput');
+        const submitButton = document.getElementById('submitButton');
+        const replayButton = document.getElementById('replayButton');
+        const nextButton = document.getElementById('nextButton');
+
+        // --- AUDIO SYSTEM GLOBALS ---
+        const audioQueue = [];
+        let audioHistory = [];
+        let isPlaying = false;
+        let currentAudioObj = null;
+
+        // --- SERVER INJECTED VARIABLES ---
+        // Jinja2 will replace these. We use 'safe' to ensure the base64 string isn't escaped.
+        const serverInitialPrompt = "{{ initial_prompt | default('', true) }}";
+        const serverInitialAudio = "{{ initial_audio | default('', true) }}";
+
+        // --- AUDIO LOGIC ---
+
+        function processQueue() {
+            if (isPlaying || audioQueue.length === 0) {
+                isPlaying = false;
+                return;
+            }
+
+            isPlaying = true;
+            const audioData = audioQueue.shift();
+
+            currentAudioObj = new Audio("data:audio/mp3;base64," + audioData);
+
+            currentAudioObj.onended = () => {
+                currentAudioObj = null;
+                isPlaying = false;
+                processQueue();
+            };
+
+            currentAudioObj.onerror = (e) => {
+                console.error("Audio playback error", e);
+                currentAudioObj = null;
+                isPlaying = false;
+                processQueue();
+            };
+
+            currentAudioObj.play().catch(e => {
+                console.warn("Autoplay prevented:", e);
+                isPlaying = false;
+            });
+        }
+
+        function handleIncomingAudio(base64Audio) {
+            audioHistory.push(base64Audio);
+            audioQueue.push(base64Audio);
+
+            if (!isPlaying) {
+                processQueue();
+            }
+        }
+
+        function stopAudioPlayback() {
+            if (currentAudioObj) {
+                currentAudioObj.pause();
+                currentAudioObj.currentTime = 0;
+                currentAudioObj = null;
+            }
+            audioQueue.length = 0;
+            isPlaying = false;
+        }
+
+        // --- INIT LOGIC ---
+        function init() {
+            if (serverInitialPrompt) {
+                textDisplay.textContent = serverInitialPrompt;
+            }
+            if (serverInitialAudio) {
+                // Clear history just in case, add initial prompt to history/queue
+                audioHistory = [];
+                handleIncomingAudio(serverInitialAudio);
+            }
+        }
+
+        // --- MAIN SEND LOGIC (STREAMING) ---
+        async function handleSend() {
+            const prompt = textInput.value;
+            if (!prompt) return;
+
+            textInput.value = '';
+            textDisplay.textContent = '';
+            stopAudioPlayback();
+            audioHistory = [];
+
+            submitButton.disabled = true;
+            replayButton.disabled = true;
+            nextButton.disabled = true;
+
+            try {
+                const response = await fetch('/process_input', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: prompt })
+                });
+
+                if (!response.ok) throw new Error('Network response was not ok');
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+
+                let buffer = '';
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    buffer += decoder.decode(value, { stream: true });
+                    const lines = buffer.split('\n');
+                    buffer = lines.pop();
+
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            try {
+                                const jsonStr = line.substring(6).trim();
+                                if (jsonStr === "[DONE]") continue;
+
+                                const data = JSON.parse(jsonStr);
+
+                                if (data.type === 'text') {
+                                    textDisplay.textContent += data.payload;
+                                    textDisplay.scrollTop = textDisplay.scrollHeight;
+                                }
+                                else if (data.type === 'audio') {
+                                    handleIncomingAudio(data.payload);
+                                }
+                                else if (data.type === 'merge') {
+                                    // Handle merge signal: truncate text and clear audio queue
+                                    const spokenChars = data.payload.spoken_chars;
+
+                                    // Truncate text display
+                                    if (textDisplay.textContent.length > spokenChars) {
+                                        textDisplay.textContent = textDisplay.textContent.substring(0, spokenChars);
+                                    }
+
+                                    // Clear audio queue to stop future segments from the old path
+                                    audioQueue.length = 0;
+                                }
+                            } catch (err) {
+                                console.warn("Stream parse error:", err);
+                            }
+                        }
+                    }
+                }
+
+            } catch (error) {
+                textDisplay.textContent += `\n[Error: ${error.message}]`;
+            } finally {
+                submitButton.disabled = false;
+                replayButton.disabled = false;
+                nextButton.disabled = false;
+            }
+        }
+
+        // --- NEXT BUTTON LOGIC ---
+        async function HandleNext() {
+            stopAudioPlayback();
+
+            textDisplay.textContent = "Loading next...";
+            try {
+                const response = await fetch('/handle_next', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({})
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) throw new Error(data.error || 'Unknown error');
+
+                if (data.redirect_url) {
+                    window.location.href = data.redirect_url;
+                    return;
+                }
+
+                // Update Text Display
+                textDisplay.textContent = data.next_prompt || "";
+
+                // Clear history and Play Audio if provided
+                audioHistory = [];
+                if (data.next_audio) {
+                    handleIncomingAudio(data.next_audio);
+                }
+
+            } catch (error) {
+                textDisplay.textContent = `Error: ${error.message}`;
+            }
+        }
+
+        // --- REPLAY LOGIC ---
+        function HandleReplay() {
+            if (audioHistory.length === 0) return;
+            stopAudioPlayback();
+            audioQueue.push(...audioHistory);
+            processQueue();
+        }
+
+        // --- EVENT LISTENERS ---
+        submitButton.addEventListener('click', handleSend);
+
+        textInput.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') handleSend();
+        });
+
+        replayButton.addEventListener('click', HandleReplay);
+        nextButton.addEventListener('click', HandleNext);
+
+        // Run Init on Load
+        window.addEventListener('load', init);
+
+    </script>
+</body>
+
+</html>
