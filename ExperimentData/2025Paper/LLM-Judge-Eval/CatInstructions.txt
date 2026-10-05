@@ -1,0 +1,22 @@
+Hello, thanks for helping characterize how these responses relate! Please refer to these instructions when working with the provided csv file.
+
+For each row of the datasheet, you'll be looking at two answers to a query and will see how the two answers relate to each other.
+
+Score each criterion by distributing a percentage of 100 across the four categories. 
+
+Criteria:
+- Equivalent: How much do they say the same thing?
+- Complementary Collaborative: How much do they add useful information to each other regarding the same topics?
+- Distinct collaborative: How much are they unrelated but still compatible?
+- Contradictory: How much do they conflict?
+
+Important: 
+The sum of your ratings across the four categories MUST equal 100 - so if you select 50%, 20%, and 20% for equivalent, CC, and DC respectively, then for contradictory, you will need to put in 10%, and if you think it should be higher, subtract from the others.
+
+Provide your responses for each criteria in the corresponding column of the csv file.
+
+Tips:
+
+Try to evaluate the criteria proportionally. Instead of asking "Is there a contradiction" ask "What percentage of the total information is contradictory?"
+
+Try to evaluate the criteria sequentially. Given all the information in the answers, what percentage is the same? How much is different? Of what is different, how much flat contradicts, and how much can be rectified or harmonized? Of what can be harmonized, how much overlap is there in the topic?

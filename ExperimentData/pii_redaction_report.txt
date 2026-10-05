@@ -1,0 +1,20 @@
+PII redaction report
+Counts only. This file intentionally contains no original identifiers.
+
+The directory was redacted in place. A later pass found nothing left to change.
+
+Redaction totals:
+files_changed=216
+renames=132
+lock_files_removed=8
+email_replacements=37
+ip_replacements=610
+phone_replacements=4
+name_replacements=246
+location_replacements=212
+username_replacements=495
+errors=0
+
+Latest verification:
+files_seen=238
+verification_leftovers=0

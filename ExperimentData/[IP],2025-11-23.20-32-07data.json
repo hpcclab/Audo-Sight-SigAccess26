@@ -1,0 +1,66 @@
+{
+    "IPAddress": "[IP]",
+    "TimeStart": "2025-11-23 20:32:07",
+    "Runs": {
+        "Run1": {
+            "Version1": [
+                {
+                    "System": "AI_Model_Alpha",
+                    "Comprehension": ""
+                },
+                {
+                    "System": "AI_Model_Alpha",
+                    "Comprehension": "The system understood all commands perfectly.",
+                    "scene: 1": [
+                        {
+                            "Query: 1": {
+                                "Request": "Open the door",
+                                "Response": "Opening door now",
+                                "ResponseTime": 120,
+                                "TurnaroundTime": 150,
+                                "Path": "/nodes/door_control"
+                            }
+                        },
+                        {
+                            "Query: 2": {
+                                "Request": "Turn on lights",
+                                "Response": "Lights on",
+                                "ResponseTime": 100,
+                                "TurnaroundTime": 110,
+                                "Path": "/nodes/light_control"
+                            }
+                        }
+                    ],
+                    "scene: 2": [
+                        {
+                            "Query: 1": {
+                                "Request": "What is the temperature?",
+                                "Response": "72 degrees",
+                                "ResponseTime": 200,
+                                "TurnaroundTime": 210,
+                                "Path": "/nodes/thermostat"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Version2": [
+                {
+                    "System": "AI_Model_Beta",
+                    "Comprehension": "",
+                    "scene: 1": [
+                        {
+                            "Query: 1": {
+                                "Request": "Lock the door",
+                                "Response": "Locked",
+                                "ResponseTime": 90,
+                                "TurnaroundTime": 95,
+                                "Path": "/nodes/security"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

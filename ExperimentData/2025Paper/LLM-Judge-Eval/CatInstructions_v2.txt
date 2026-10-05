@@ -1,0 +1,22 @@
+Hello, thanks for helping characterize how these responses relate! Please refer to these instructions when working with the provided csv file.
+
+For each row of the datasheet, you'll be looking at two answers to a query and will see how the two answers relate to each other.
+
+Please select one catagory that best fits the two responses. 
+
+Criteria:
+- Equivalent: They say the same thing.
+- Complementary Collaborative: They add useful information to each other regarding the same topics.
+- Distinct collaborative: They are unrelated but still compatible.
+- Contradictory: They conflict.
+
+Provide your category selected for each criteria by marking the corresponding column of the csv file with the number one.
+
+Here is an example:
+
+Query          | Answer1 | Answer2 | Equivalent | Complementary Collaborative | Distinct collaborative | Contradictory
+is that a car? | Yes     | No      |            |                             |                        | 1
+
+You can leave the other columns blank.
+
+Thank you again for your help.

@@ -1,0 +1,1113 @@
+[
+    {
+        "query": "What is the surface material of the immediate path? Answer at once.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "How close is the hedge to where I am? Tell me right now.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Are there visible wires or cords on the floor? This is a priority.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "What is the condition of the grass\u2014any cracks or debris? Report immediately.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Tell me this second: is this store crowded or quiet?",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Could you tell me at once if the fan is on or off?",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the space wide enough to walk through? I need an instant answer.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "How long will it take to tidy up this room? I need to know right now.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Let me know this instant which part of this room is really messy.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "How high is the railing? Tell me this second.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is there a road in front, and is it busy? Immediate attention required.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 3,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Are there any fences or barriers blocking access? Answer immediately.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "How bright is the lighting in the room? Tell me right now.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is the device positioned upright or tilted? I need to know now.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "How many people are behind the counter? I need to know right now.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Does the atmosphere feel busy or empty? Tell me right now.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is this an office or a study? Tell me right now.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Let me know without delay if the ground is dry and smooth enough to walk on.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Does the hallway turn a corner? Answer immediately.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "What does the weather seem like? I need an immediate response.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is there a black fence between the sidewalk and the grass? I need to know now.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "What is the material of the sidewalk? I need to know this second.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "How bright is the lighting? Answer immediately.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the main pathway clear of obstacles? Tell me this instant.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Immediately: are there any other cars visible in the lot?",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Let me know immediately if the cashier is visible in this scene.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Is there natural or artificial light? Tell me without delay.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Is the water calm or rough? I need to know immediately.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Does this look like a private or public space? Tell me this second.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is there a sidewalk separating the street? I need to know now.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "How far am I from the fire hydrant? Tell me this second.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 1,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Does it sound busy or quiet? Report this second.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Is the backyard primarily covered by a green lawn? Answer immediately.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Can you tell if it's daytime or nighttime? I need to know immediately.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the lawn well-maintained and green? Answer immediately.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Do the clouds look dangerous or stormy? I need to know immediately.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Is there a clear sidewalk on the other side of the street? I need to know this instant.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Do I have enough space to walk through the room safely? Tell me now.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is the computer near the fan available? I need to know right now.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 2,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Distinct collaborative"
+    },
+    {
+        "query": "Does the room feel messy or organized? Tell me now.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "How tall is the fence and what is the material? Report at once.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "What is the overall brightness of the room? I need an instant report.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "How long is the line to order food? Tell me immediately.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "How far am I from the TV? Answer immediately.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 1,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Tell me now: how far is the wall from here?",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 1,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Is the rug a solid color or patterned? Answer at once.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "What room of a home does this appear to be? Answer this instant.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "What are the dimensions of the walking area? I need to know now.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 3,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Let me know at once if there are clouds in the sky or if it\u2019s clear.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Tell me at once: how even is the ground if I walk toward the chairs?",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Does the ground feel dry or moist? I need to know immediately.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "What material is the fence made of? I need to know immediately.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Are the blinds up or down? Report this instant.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Does the atmosphere feel cozy or minimalist? I need to know now.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "How much snow is on the ground? Give me an immediate report.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is the sky clear or are there many clouds? Answer this instant.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is the ground paved or grass? Tell me this instant.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is it bright or dark outside? I need an instant answer.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Does it look safe for walking? Tell me right now.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Describe the ground ocrure right in front of me this second.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Is it safe to cross the street with my cane? This is a priority request.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 1,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Can I walk over to the lawns, or is there a barrier? I need to know this second.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 1,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is the ground paved, dirt, or gravel? I need to know at once.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 1,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "What section of the bookstore am I in? I need to know now.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "How far is the door from where I am sitting? Tell me this instant.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 1,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is the grass in the main part of the yard dry and brown? Tell me now.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Are the chairs occupied by people waiting? Answer at once.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Am I currently at a street corner? Tell me right now.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Does the scene appear clean and well-maintained? Let me know now.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the floor hard or carpeted? I need an instant answer.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the sidewalk clear to walk on? Let me know this instant.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the floor tile, carpet, or a rug? Tell me immediately.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the path from the couch to the door clear? Tell me right now.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Let me know right now if the driveway is shaded for parking or not.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is the ground where the toys are grass or dirt? Answer at once.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is there a wooden deck or walkway here? Identify it now.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Let me know right now if the sky is clear or cloudy.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the path solid or does it shift underfoot? Tell me at once.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 1,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is the backyard fully enclosed by a tall fence? This is urgent.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is there any red truck visible? Tell me this second.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "What is the overall shape of the room? Tell me at once.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the weather sunny or cloudy right now? I need an immediate answer.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the path near me dirt or gravel? Report right now.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 2,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Is there an unobstructed path to the door? I need to know immediately.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the digital display bright or dim? Tell me at once.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 3,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Contradictory"
+    },
+    {
+        "query": "Tell me without delay if the driveway is clear or occupied.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "What kind of building is this? I need to know at once.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "How far do I have to walk to reach the trees? Answer immediately.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 1,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "How bright is the hallway lighting? Tell me at once.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is severe weather approaching? Give me an urgent update.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 3,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Are the windows open or closed? Report immediately.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Describe the surroundings around the car immediately.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 1,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "What room of a home does this appear to be? Identify it now.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "Is it raining, or has it just stopped? Tell me now.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is there a fence between here and the backyard with the dog? Tell me now.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Is the street asphalt wet or dry? Tell me right now.",
+        "answers": {
+            "Equivalent": 3,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Tell me immediately how the lawn area looks in front of the houses.",
+        "answers": {
+            "Equivalent": 0,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 3,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Distinct collaborative"
+    },
+    {
+        "query": "How close is the street to the buildings? Report at once.",
+        "answers": {
+            "Equivalent": 2,
+            "Complementary Collaborative": 1,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Let me know this instant if you see a safe, clear path on this snowy ground.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 2,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Complementary Collaborative"
+    },
+    {
+        "query": "What is the condition of the grass\u00e2\u20ac\u201dany cracks or debris? Report immediately.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    },
+    {
+        "query": "Let me know at once if there are clouds in the sky or if it\u00e2\u20ac\u2122s clear.",
+        "answers": {
+            "Equivalent": 1,
+            "Complementary Collaborative": 0,
+            "Distinct collaborative": 0,
+            "Contradictory": 0,
+            "None/Unknown": 0
+        },
+        "majority_vote": "Equivalent"
+    }
+]
