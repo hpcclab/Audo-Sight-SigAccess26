@@ -4,7 +4,7 @@ Assistive conversational perception for blind and low-vision (BLV) people, throu
 
 Audo-Sight lets a BLV user ask about their surroundings and hear a concise spoken answer. On the edge, a Cognition Module reads the query, decides whether it is urgent, and routes it to a specialist vision model or to multimodal language models. For urgent open questions, speech starts from a fast local model. A Response Fusion Engine then continues the same utterance with a slower, more accurate cloud answer, correcting conflicts and dropping repeated detail.
 
-This repository is the software prototype evaluated in *Audo-Sight: Assistive Conversational Perception through Collaborative Edge-Cloud Intelligence* (SIGACCESS, 25–28 September 2026, Porto). The manuscript is [`SIGACCESS26_LLM4SmartSight_jacob_Mohsen (2).pdf`](<SIGACCESS26_LLM4SmartSight_jacob_Mohsen (2).pdf>).
+This repository is the software prototype evaluated in *Audo-Sight: Assistive Conversational Perception through Collaborative Edge-Cloud Intelligence* (SIGACCESS, 25–28 September 2026, Porto).
 
 Python 3.11.9.
 
